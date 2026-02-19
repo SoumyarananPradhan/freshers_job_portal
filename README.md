@@ -58,10 +58,49 @@ Click below to expand the local setup guide for both the frontend and backend.
 <details>
 <summary><b>💻 Backend Setup (Django)</b></summary>
 
+<br>
+
 ```bash
 cd backend
 python -m venv venv
-source venv/bin/activate  # On Windows use: venv\Scripts\activate
+source venv/bin/activate
+pip install -r requirements.txt
+python manage.py makemigrations
+python manage.py migrate
+python manage.py runserver
+</details>
+
+<details>
+<summary><b>🌐 Frontend Setup (React)</b></summary>
+
+Bash
+cd frontend
+npm install
+npm run dev
+</details>
+
+Gemini said
+Ah, excellent catch! Sometimes Markdown gets a little finicky with those collapsible <details> tags if there aren't enough blank lines between them, which accidentally swallows the sections below it.
+
+Let's fix that README right now, and then I will give you the exact bullet points you need to copy and paste this masterpiece into your resume and portfolio!
+
+1. The README Fix
+Open your README.md, scroll down to the Setup Instructions, and replace everything from Setup Instructions down to the bottom with this carefully spaced version:
+
+Markdown
+## ⚙️ Setup Instructions
+
+Click below to expand the local setup guide for both the frontend and backend.
+
+<details>
+<summary><b>💻 Backend Setup (Django)</b></summary>
+
+<br>
+
+```bash
+cd backend
+python -m venv venv
+source venv/bin/activate
 pip install -r requirements.txt
 python manage.py makemigrations
 python manage.py migrate
@@ -78,19 +117,14 @@ npm run dev
 </details>
 
 🛣️ Future Roadmap
+
 [x] Role-based JWT Authentication
-
 [x] Application tracking & status updates
-
 [x] Pagination & Search filtering
-
 [ ] Resume PDF upload support
 
-[ ] Email notifications for application updates
+## 👨‍💻 Author
 
-👨‍💻 Author
-Soumyaranjan Pradhan
-
-Full-Stack Developer
-
-LinkedIn Profile | GitHub Profile
+**Soumyaranjan Pradhan**
+* Full-Stack Developer 
+* [LinkedIn](https://www.linkedin.com/in/soumyaranjan-pradhan-/) | [GitHub](https://github.com/SoumyarananPradhan/)
