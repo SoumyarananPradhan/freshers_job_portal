@@ -24,19 +24,11 @@
 
 ## 📸 App Preview
 
-*(Replace these text blocks with actual GIFs or screenshots of your app!)*
+### 🔍 Dynamic Search & Pagination
+![Search and Pagination Preview](https://your-image-link-goes-here.com/image1.png)
 
-<details open>
-  <summary><b>🔍 Dynamic Search & Pagination</b></summary>
-  <br/>
-  <i>Placeholder: Imagine a cool GIF here showing the glassy search bar filtering jobs instantly.</i>
-</details>
-
-<details open>
-  <summary><b>💼 Recruiter Dashboard & Status Updates</b></summary>
-  <br/>
-  <i>Placeholder: Imagine a screenshot here showing the Recruiter updating a student's status to "Hired!"</i>
-</details>
+### 💼 Recruiter Dashboard & Status Updates
+![Recruiter Dashboard Preview](https://your-image-link-goes-here.com/image2.png)
 
 ---
 
@@ -53,48 +45,36 @@
 
 ## ⚙️ Setup Instructions
 
-Click below to expand the local setup guide for both the frontend and backend.
+### 💻 Backend Setup (Django)
 
-<details>
-<summary><b>💻 Backend Setup (Django)</b></summary>
-
-<br>
+Navigate to the backend directory and set up the Python environment:
 
 ```bash
 cd backend
 python -m venv venv
-source venv/bin/activate
+source venv/bin/activate  # On Windows use: venv\Scripts\activate
 pip install -r requirements.txt
 python manage.py makemigrations
 python manage.py migrate
 python manage.py runserver
-</details>
-
----
-
-<details>
-<summary><b>🌐 Frontend Setup (React)</b></summary>
+🌐 Frontend Setup (React)
+Open a new terminal, navigate to the frontend directory, and start the development server:
 
 Bash
 cd frontend
 npm install
 npm run dev
-</details>
-
----
-
 
 🛣️ Future Roadmap
-
 [x] Role-based JWT Authentication
 [x] Application tracking & status updates
 [x] Pagination & Search filtering
 [ ] Resume PDF upload support
+[ ] Email notifications for application updates
 
----
+👨‍💻 Author
+Soumyaranjan Pradhan
 
-## 👨‍💻 Author
+Full-Stack Developer
 
-**Soumyaranjan Pradhan**
-* Full-Stack Developer 
-* [LinkedIn](https://www.linkedin.com/in/soumyaranjan-pradhan-/) | [GitHub](https://github.com/SoumyarananPradhan/)
+LinkedIn | GitHub
