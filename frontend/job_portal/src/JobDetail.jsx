@@ -22,7 +22,7 @@ function JobDetail() {
   const [coverLetter, setCoverLetter] = useState('');
 
   useEffect(() => {
-    axios.get(`http://127.0.0.1:8000/api/jobs/${id}/`)
+    axios.get(`https://fresherjobs-api.onrender.com/api/jobs/${id}/`)
       .then(response => {
         setJob(response.data);
         setLoading(false);
@@ -48,7 +48,7 @@ function JobDetail() {
 
     try {
       await axios.post(
-        `http://127.0.0.1:8000/api/jobs/${id}/apply/`,
+        `https://fresherjobs-api.onrender.com/api/jobs/${id}/apply/`,
         { cover_letter: coverLetter }, // Send the cover letter text!
         {
           headers: {

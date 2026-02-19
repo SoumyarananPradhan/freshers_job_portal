@@ -19,7 +19,7 @@ function Login() {
     setError('');
 
     try {
-      const response = await axios.post('http://127.0.0.1:8000/api/token/', {
+      const response = await axios.post('https://fresherjobs-api.onrender.com/api/token/', {
         username,
         password
       });
@@ -173,7 +173,7 @@ export default Login;
 
 //     try {
 //       // 1. Send credentials to Django
-//       const response = await axios.post('http://127.0.0.1:8000/api/token/', {
+//       const response = await axios.post('https://fresherjobs-api.onrender.com/api/token/', {
 //         username,
 //         password
 //       });

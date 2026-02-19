@@ -43,7 +43,7 @@ function PostJob() {
     };
 
     try {
-      await axios.post('http://127.0.0.1:8000/api/jobs/', payload, {
+      await axios.post('https://fresherjobs-api.onrender.com/api/jobs/', payload, {
         headers: {
           Authorization: `Bearer ${token}`
         }

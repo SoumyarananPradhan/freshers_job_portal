@@ -18,7 +18,7 @@ function Dashboard() {
 
     const token = localStorage.getItem('access_token');
 
-    axios.get('http://127.0.0.1:8000/api/applications/', {
+    axios.get('https://fresherjobs-api.onrender.com/api/applications/', {
       headers: { Authorization: `Bearer ${token}` }
     })
       .then(response => {
@@ -37,7 +37,7 @@ function Dashboard() {
     
     try {
       await axios.patch(
-        `http://127.0.0.1:8000/api/applications/${applicationId}/update_status/`,
+        `https://fresherjobs-api.onrender.com/api/applications/${applicationId}/update_status/`,
         { status: newStatus },
         { headers: { Authorization: `Bearer ${token}` } }
       );

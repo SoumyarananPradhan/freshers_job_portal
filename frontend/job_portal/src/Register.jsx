@@ -33,7 +33,7 @@ function Register() {
     };
 
     try {
-      await axios.post('http://127.0.0.1:8000/api/register/', payload);
+      await axios.post('https://fresherjobs-api.onrender.com/api/register/', payload);
       // On success, send them to the login page
       navigate('/login');
     } catch (err) {

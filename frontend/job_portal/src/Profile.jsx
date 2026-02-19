@@ -33,7 +33,7 @@ function Profile() {
     const token = localStorage.getItem('access_token');
     
     // Fetch the existing profile data on load
-    axios.get('http://127.0.0.1:8000/api/profile/', {
+    axios.get('https://fresherjobs-api.onrender.com/api/profile/', {
       headers: { Authorization: `Bearer ${token}` }
     })
       .then(response => {
@@ -59,7 +59,7 @@ function Profile() {
     const token = localStorage.getItem('access_token');
 
     try {
-      await axios.put('http://127.0.0.1:8000/api/profile/', formData, {
+      await axios.put('https://fresherjobs-api.onrender.com/api/profile/', formData, {
         headers: { Authorization: `Bearer ${token}` }
       });
       setMessage({ type: 'success', text: 'Profile updated successfully!' });

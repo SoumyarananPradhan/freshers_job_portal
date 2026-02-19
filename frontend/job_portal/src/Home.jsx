@@ -21,8 +21,8 @@ function Home() {
     let url = pageUrl;
     if (!url) {
       url = query 
-        ? `http://127.0.0.1:8000/api/jobs/?search=${query}` 
-        : 'http://127.0.0.1:8000/api/jobs/';
+        ? `https://fresherjobs-api.onrender.com/api/jobs/?search=${query}` 
+        : 'https://fresherjobs-api.onrender.com/api/jobs/';
     }
 
     axios.get(url)
