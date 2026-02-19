@@ -1,35 +1,63 @@
-# 🚀 FresherJobs - Full Stack Job Portal MVP
+# 🚀 FresherJobs - Full Stack Job Portal 
 
-A robust, two-sided marketplace built to connect college students with recruiters. This platform features role-based access control, allowing companies to post openings and manage candidates, while students can build profiles and submit applications with custom cover letters.
+<div align="center">
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
+  <img src="https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white" alt="Django" />
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind" />
+</div>
 
-## 🛠️ Tech Stack
+<br />
 
-**Frontend:**
-* React.js (Vite)
-* Tailwind CSS (Glassmorphism UI design)
-* Axios (API communication)
-* React Router (Client-side routing)
-* Lucide React (Iconography)
+> A robust, two-sided marketplace MVP built to connect college students with recruiters. Features role-based JWT authentication, dynamic profiles, and a real-time application tracking system.
 
-**Backend:**
-* Python & Django
-* Django REST Framework (DRF)
-* SimpleJWT (JSON Web Token Authentication)
-* SQLite (Development Database - easily swappable to PostgreSQL)
+---
+
+## 📑 Table of Contents
+- [📸 App Preview](#-app-preview)
+- [✨ Key Features](#-key-features)
+- [⚙️ Setup Instructions](#️-setup-instructions)
+- [🛣️ Future Roadmap](#️-future-roadmap)
+- [👨‍💻 Author](#-author)
+
+---
+
+## 📸 App Preview
+
+*(Replace these text blocks with actual GIFs or screenshots of your app!)*
+
+<details open>
+  <summary><b>🔍 Dynamic Search & Pagination</b></summary>
+  <br/>
+  <i>Placeholder: Imagine a cool GIF here showing the glassy search bar filtering jobs instantly.</i>
+</details>
+
+<details open>
+  <summary><b>💼 Recruiter Dashboard & Status Updates</b></summary>
+  <br/>
+  <i>Placeholder: Imagine a screenshot here showing the Recruiter updating a student's status to "Hired!"</i>
+</details>
+
+---
 
 ## ✨ Key Features
 
-* **Role-Based Authentication:** Secure, distinct login flows and dashboards for `Students` and `Recruiters` using JWT access and refresh tokens.
-* **Dynamic Dashboards:** * Recruiters can post jobs, view applicant lists, read cover letters, and update candidate statuses (Shortlisted, Hired, Rejected).
-  * Students can track the live status of their applications.
-* **Smart User Profiles:** Single API endpoint that dynamically serves and updates Student or Company profiles based on the user's token.
-* **Advanced Search & Pagination:** Backend filtering using Django `Q` objects for case-insensitive keyword searches, coupled with DRF pagination to handle large datasets efficiently.
-* **Responsive UI:** A modern, dark-themed interface built with Tailwind CSS, featuring active state management and modal overlays.
+* **🛡️ Role-Based Authentication:** Secure, distinct login flows for `Students` and `Recruiters` using JWT.
+* **📊 Dynamic Dashboards:** * **Recruiters:** Post jobs, view applicant lists, read cover letters, and update candidate statuses.
+  * **Students:** Track the live status of applications and build out a skills profile.
+* **🧠 Smart User Profiles:** A single API endpoint that dynamically serves and updates Student or Company profiles based purely on the token.
+* **⚡ Advanced Search & Pagination:** Backend filtering using Django `Q` objects for case-insensitive keyword searches, coupled with DRF pagination to handle large datasets.
+* **🎨 Modern UI:** A highly responsive, dark-themed glassmorphism interface built with Tailwind CSS.
 
-## ⚙️ Local Setup Instructions
+---
 
-### 1. Backend Setup (Django)
-Navigate to the backend directory and set up the Python environment:
+## ⚙️ Setup Instructions
+
+Click below to expand the local setup guide for both the frontend and backend.
+
+<details>
+<summary><b>💻 Backend Setup (Django)</b></summary>
+
 ```bash
 cd backend
 python -m venv venv
@@ -38,25 +66,31 @@ pip install -r requirements.txt
 python manage.py makemigrations
 python manage.py migrate
 python manage.py runserver
-2. Frontend Setup (React)
-Open a new terminal, navigate to the frontend directory, and start the development server:
+</details>
+
+<details>
+<summary><b>🌐 Frontend Setup (React)</b></summary>
 
 Bash
 cd frontend
 npm install
 npm run dev
-🔒 Security Implementations
-Passwords are cryptographically hashed via Django's auth system.
+</details>
 
-Endpoints are protected via DRF permission classes (IsAuthenticated).
+🛣️ Future Roadmap
+[x] Role-based JWT Authentication
 
-Cross-role validation prevents students from accessing recruiter-only endpoints (e.g., job creation, status updates).
+[x] Application tracking & status updates
+
+[x] Pagination & Search filtering
+
+[ ] Resume PDF upload support
+
+[ ] Email notifications for application updates
 
 👨‍💻 Author
 Soumyaranjan Pradhan
 
-Full-Stack Developer specializing in Python, Django, and React.
+Full-Stack Developer
 
-[LinkedIn Profile] https://www.linkedin.com/in/soumyaranjan-pradhan-/
-
-[GitHub Profile] https://github.com/SoumyarananPradhan
+LinkedIn Profile | GitHub Profile
